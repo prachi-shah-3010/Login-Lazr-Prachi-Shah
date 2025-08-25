@@ -3,7 +3,7 @@
 
 This project is part of the Cypress login test assignment.
 
-** Your task is to: 
+**Your task is to:** 
 
 Write Cypress tests that attempt to log in to Lazr with both valid and invalid credentials.
 
@@ -13,7 +13,7 @@ Assert whether the login was successful or failed.
 
 -  Use Cypress (latest version).
 
-Add two tests:
+**Add two tests:**
 
 -  ✅ Valid login (provided email + password).
 
@@ -32,12 +32,12 @@ npm install
 
 3. Run Cypress
 
-Open the Cypress Test Runner:
+**Open the Cypress Test Runner:**
 
 npx cypress open
 
 
-** Run headless tests: **
+**Run headless tests:**
 
 npx cypress run
 
@@ -53,7 +53,7 @@ Updated README.md if you add any extra instructions.
 
 Push your code to a public GitHub repository named:
 
-Login-Lazr-Your-Name
+**Login-Lazr-Your-Name**
 
 # 🌟 Bonus (Optional)
 
