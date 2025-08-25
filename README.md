@@ -3,7 +3,7 @@
 
 This project is part of the Cypress login test assignment.
 
-Your task is to: 
+** Your task is to: 
 
 Write Cypress tests that attempt to log in to Lazr with both valid and invalid credentials.
 
