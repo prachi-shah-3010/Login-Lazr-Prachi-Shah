@@ -3,7 +3,7 @@
 
 This project is part of the Cypress login test assignment.
 
-** Your task is to: **
+Your task is to: 
 
 Write Cypress tests that attempt to log in to Lazr with both valid and invalid credentials.
 
@@ -24,7 +24,7 @@ Make sure the test clearly asserts whether login passed or failed.
 # 📂 Project Setup 
 
 1. Clone the repository
-git clone [https://github.com/your-username/Login-Lazr-Your-Name.git](https://github.com/lazrfreight/test-qa.git)
+git clone [https://github.com/your-username/test-qa.git](https://github.com/lazrfreight/test-qa.git)
 cd test-qa
 
 2. Install dependencies
@@ -41,11 +41,11 @@ npx cypress open
 
 npx cypress run
 
-🔑 Credentials
+# 🔑 Credentials
 
 We will provide you with by email
 
-🎯 What to Deliver
+# 🎯 What to Deliver
 
 Your completed tests inside cypress/e2e/.
 
@@ -55,7 +55,7 @@ Push your code to a public GitHub repository named:
 
 Login-Lazr-Your-Name
 
-🌟 Bonus (Optional)
+# 🌟 Bonus (Optional)
 
 Use Cypress environment variables for credentials (CYPRESS_email, CYPRESS_password).
 
