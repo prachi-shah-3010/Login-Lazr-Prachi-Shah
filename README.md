@@ -1,64 +1,111 @@
-# Create a Test for Login Page 
-📌 Assignment
+# 🚀 QA Assignment – Cypress Login Test
 
-This project is part of the Cypress login test assignment.
+Welcome! This project is a short Cypress E2E exercise focused on validating the Lazr login flow.
 
-**Your task is to:** 
+---
 
-Write Cypress tests that attempt to log in to Lazr with both valid and invalid credentials.
+## 📌 Assignment
 
-Assert whether the login was successful or failed.
+Your task is to **write Cypress tests** that attempt to log in to **Lazr** with both **valid** and **invalid** credentials.
 
-✅ Requirements
+The tests must clearly assert whether the login was successful or failed.
 
--  Use Cypress (latest version).
+### ✅ Requirements
+- Use **Cypress (latest version)**.
+- Add **two tests**:
+  - ✅ Valid login (with provided email + password).
+  - ❌ Invalid login (with any wrong credentials).
+- Make sure each test contains clear assertions.
 
-**Add two tests:**
+### ℹ️ **Note:** Login page selectors may vary.  
+> If unsure, you can use:  
+> - `input[name="email"]`  
+> - `input[name="password"]`  
+> - `button[type="submit"]`  
+> or equivalent.
 
--  ✅ Valid login (provided email + password).
+---
 
--  ❌ Invalid login (any wrong credentials).
+## 📂 Project Setup
 
-Make sure the test clearly asserts whether login passed or failed.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/lazrfreight/test-qa.git
+   cd test-qa
+   ```
 
-# 📂 Project Setup 
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-1. Clone the repository
-git clone [https://github.com/your-username/test-qa.git](https://github.com/lazrfreight/test-qa.git)
-cd test-qa
+3. **Run Cypress**
+   - Open the Cypress Test Runner:
+     ```bash
+     npx cypress open
+     ```
+   - Run Cypress tests headlessly:
+     ```bash
+     npx cypress run
+     ```
 
-2. Install dependencies
-npm install
+---
 
-3. Run Cypress
+## 🔑 Credentials
+You will receive valid login credentials via email.  
 
-**Open the Cypress Test Runner:**
+For the invalid login test, you can use any incorrect credentials (e.g., `wrong@example.com / invalid123`).
 
-npx cypress open
+---
+
+## 📝 What to Deliver
+
+1. Your completed tests inside:
+   ```
+   cypress/e2e/login.cy.js
+   ```
+
+2. Updated `README.md` (if you add extra instructions).
+
+3. Push your solution to a **new public GitHub repository** named:
+   ```
+   Login-Lazr-Your-Name
+   ```
+   Example:
+   ```
+   Login-Lazr-Jane-Doe
+   ```
+
+4. Share the GitHub repo link with us.
+
+---
+
+## 🌟 Bonus (Optional)
+
+- Use **Cypress environment variables** for credentials:
+  ```bash
+  CYPRESS_email=user@example.com CYPRESS_password=secret npx cypress run
+  ```
+  (access via `Cypress.env("email")` and `Cypress.env("password")`).
+
+- Add **reusable commands** in:
+  ```
+  cypress/support/commands.js
+  ```
 
 
-**Run headless tests:**
+---
 
-npx cypress run
+## ⚙️ Node.js Version
 
-# 🔑 Credentials
+This project uses **Node.js 20.x**.  
+If you use [nvm](https://github.com/nvm-sh/nvm), switch with:
+```bash
+nvm use
+```
 
-We will provide you with by email
+A `.nvmrc` file is included for convenience.
 
-# 🎯 What to Deliver
+---
 
-Your completed tests inside cypress/e2e/.
-
-Updated README.md if you add any extra instructions.
-
-Push your code to a public GitHub repository named:
-
-**Login-Lazr-Your-Name**
-
-# 🌟 Bonus (Optional)
-
-Use Cypress environment variables for credentials (CYPRESS_email, CYPRESS_password).
-
-Add reusable commands in cypress/support/commands.js.
-
-Set up GitHub Actions CI to run Cypress tests automatically.
+✅ Good luck, and happy testing!
