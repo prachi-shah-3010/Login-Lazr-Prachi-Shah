@@ -2,23 +2,25 @@
 
 This project contains Cypress E2E tests for verifying the **login functionality** of Lazr.
 
+## 📌 Requirements
+- ✅ Test login with **valid credentials**
+- ✅ Test login with **invalid credentials**
+- ✅ Use Cypress environment variables for credentials
+- ✅ Run tests in **headless mode**
+- ✅ Updated README with clear setup instructions
+
 ---
-## ✅ Requirements Covered
-- Test with **valid login credentials**  
-- Test with **invalid login credentials**  
-- Clear **assertions** for each case  
----
 
-## 🛠 Project Setup
+## ⚙️ Project Setup
 
-1. Clone the repository
-
-git clone https://github.com/lazrfreight/test-qa.git
-cd test-qa
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/prachi-shah-3010/Login-Lazr-Prachi-Shah.git
+   cd Login-Lazr-Prachi-Shah
 
 2. Install dependencies
 
-npm install
+   npm install
 
 3. Run Cypress
 
@@ -52,7 +54,8 @@ npm install
 
 📌 Notes
 
-Base URL configured in cypress.config.js → https://test3.dev.lazr.io
+Base URL configured in cypress.config.js → baseUrl: "https://test3.dev.lazr.io"
+                                           defaultCommandTimeout: 15000
 
 Credentials are handled via Cypress environment variables
 
@@ -62,4 +65,4 @@ Node.js version: 20.x
 
 
 
-✅ Good luck, and happy testing!
+✅ Thank You!
