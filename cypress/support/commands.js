@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', (email, password) => {
+  cy.visit('/signin');
+
+  // Enter email
+  cy.get('input:not([type="password"])').first().type(email, { force: true });
+
+  // Enter password
+  cy.get('input[type="password"]').type(password, { force: true });
+
+  // Click Sign In button
+  cy.contains('button', /sign in/i).click({ force: true });
+});
